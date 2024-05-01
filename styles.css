@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lavender;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  height: 40vmin;
+  aspect-ratio: 4/2;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3vmin;
+}
+p {
+  font-size: 2vmin;
+}
+
+.left {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 30px;
+}
+.left > div > p {
+  color: blueviolet;
+}
+.left > .icons {
+  font-size: 3vmin;
+  transition: all;
+  transition-duration: 300ms;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.left > .icons > ion-icon:hover {
+  transition: all;
+  transition-duration: 300ms;
+  color: blueviolet;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .left > .icons {
+    margin-bottom: 0;
+  }
+}
